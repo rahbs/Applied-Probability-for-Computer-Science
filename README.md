@@ -2,7 +2,7 @@
 ##  2020-2 Applied Probability for Computer Science
 ##  컴퓨터 응용 확률 - 이상철 교수님 수업 과제 정리 (자세한 설명/결과는 각 파일의 report 참고)
 
-### hw3 : regression of exponential model
+## hw3 : regression of exponential model
 -	지수적으로 증가 혹은 감소하는 데이터를 모델링 시, 데이터에 자연로그를 취하여 선형 모델로 회귀분석
 
 <p align="center"><img src="https://render.githubusercontent.com/render/math?math=y=a\times e^{bx}"></p>
@@ -46,8 +46,8 @@ SSE를 최소화하는 <img src="https://render.githubusercontent.com/render/mat
 
 ![ww](https://user-images.githubusercontent.com/35826556/109385064-713cc380-7934-11eb-90f5-618da86f157b.png)
 
-### hw4 : iris classfication
-#### k-fold cross validation: 
+## hw4 : iris classfication
+### k-fold cross validation: 
 각 fold의 train, validation data의 클래스 비율을 같게 총 5개의 fold로 나누었다.
 
 총 데이터 개수: 150개
@@ -56,8 +56,8 @@ fold별 train data 개수: 120개 = (각 클래스별 40개) * (클래스 개수
 
 fold별 validation data 개수: 30개 = (각 클래스별 10개) * (클래스 개수 3개)
 
-#### classifier
-##### 1. Naïve bayesian classifier:
+### classifier
+#### 1. Naïve bayesian classifier:
 <p align="center"><img src="https://render.githubusercontent.com/render/math?math=P\left(c| x\right)=P\left(x| w_j\right)\ P\left(w_j\right)\ /\ P(x)"> --- (식 1)</p>
 
 <p align="center">(Posterior) = (likelihood)*(prior)/(evidence)</p>
@@ -72,23 +72,23 @@ fold별 validation data 개수: 30개 = (각 클래스별 10개) * (클래스 �
 	Data를 class, feature별로 구분한 뒤, interval로 나누어 그 구간에 대한 likelihood값을 구함. 
 
 
-##### 2. Gaussian classifier:
+#### 2. Gaussian classifier:
  
  각 feature별로 likelihood를 구해서 곱하는 방식은 위와 같으나, likelihood를 구할 때 pmf를 이용하는 것이 아니라, gaussian으로 분포를 가정하여 구하였다. 
 
 
-##### 3. multi-variate Gaussian classifier
+#### 3. multi-variate Gaussian classifier
 
 ![image](https://user-images.githubusercontent.com/35826556/109386355-88cc7a00-793d-11eb-8040-34ff3086b3d2.png)
 
-##### 4. simple deep neural network
+#### 4. simple deep neural network
 
-#### Evaluation
+### Evaluation
 각 fold에 대하여, validation data의 각 행마다 Bayesian_classifier를 통해 inference를 진행 후, 실제 class값과 비교하여 precision 과 recall을 구했다.
 최종적으로 각 fold의 precision과 recall의 평균값을 구해 모델을 평가하였다.
 
 
-### hw5 : binomial random variable vs poisson distribution
+## hw5 : binomial random variable vs poisson distribution
 
 - binomial random variable (p = 0.01 , n = 1000)
 
