@@ -81,7 +81,7 @@ fold별 validation data 개수: 30개 = (각 클래스별 10개) * (클래스 �
 
 ![image](https://user-images.githubusercontent.com/35826556/109386355-88cc7a00-793d-11eb-8040-34ff3086b3d2.png)
 
-4. simple deep neural network
+##### 4. simple deep neural network
 
 #### Evaluation
 각 fold에 대하여, validation data의 각 행마다 Bayesian_classifier를 통해 inference를 진행 후, 실제 class값과 비교하여 precision 과 recall을 구했다.
