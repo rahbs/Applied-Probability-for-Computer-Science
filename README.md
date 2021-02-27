@@ -57,7 +57,7 @@ fold별 train data 개수: 120개 = (각 클래스별 40개) * (클래스 개수
 fold별 validation data 개수: 30개 = (각 클래스별 10개) * (클래스 개수 3개)
 
 #### classifier
-1. Naïve bayesian classifier:
+##### 1. Naïve bayesian classifier:
 <p align="center"><img src="https://render.githubusercontent.com/render/math?math=P\left(c| x\right)=P\left(x| w_j\right)\ P\left(w_j\right)\ /\ P(x)"> --- (식 1)</p>
 
 <p align="center">(Posterior) = (likelihood)*(prior)/(evidence)</p>
@@ -72,11 +72,12 @@ fold별 validation data 개수: 30개 = (각 클래스별 10개) * (클래스 �
 	Data를 class, feature별로 구분한 뒤, interval로 나누어 그 구간에 대한 likelihood값을 구함. 
 
 
-2. Gaussian classifier:
+##### 2. Gaussian classifier:
  
  각 feature별로 likelihood를 구해서 곱하는 방식은 위와 같으나, likelihood를 구할 때 pmf를 이용하는 것이 아니라, gaussian으로 분포를 가정하여 구하였다. 
 
-3. multi-variate Gaussian classifier
+
+##### 3. multi-variate Gaussian classifier
 
 ![image](https://user-images.githubusercontent.com/35826556/109386355-88cc7a00-793d-11eb-8040-34ff3086b3d2.png)
 
