@@ -1,5 +1,4 @@
-# Applied-Probability-for-Computer-Science
-##  2020-2 Applied Probability for Computer Science
+# 2020-2 Applied-Probability-for-Computer-Science
 ##  컴퓨터 응용 확률 - 이상철 교수님 수업 과제 정리 (자세한 설명/결과는 각 파일의 report 참고)
 
 ## hw3 : regression of exponential model
