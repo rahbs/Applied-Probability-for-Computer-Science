@@ -82,6 +82,11 @@ fold별 validation data 개수: 30개 = (각 클래스별 10개) * (클래스 �
 
 #### 4. simple deep neural network
 
+fully connected neural network
+activation function : sofmax
+loss : categorical_crossentropy
+optimizer: adam
+
 ### Evaluation
 각 fold에 대하여, validation data의 각 행마다 Bayesian_classifier를 통해 inference를 진행 후, 실제 class값과 비교하여 precision 과 recall을 구했다.
 최종적으로 각 fold의 precision과 recall의 평균값을 구해 모델을 평가하였다.
