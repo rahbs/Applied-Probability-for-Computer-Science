@@ -49,8 +49,11 @@ SSE를 최소화하는 <img src="https://render.githubusercontent.com/render/mat
 ### hw4 : iris classfication
 #### k-fold cross validation: 
 각 fold의 train, validation data의 클래스 비율을 같게 총 5개의 fold로 나누었다.
+
 총 데이터 개수: 150개
+
 fold별 train data 개수: 120개 = (각 클래스별 40개) * (클래스 개수 3개)
+
 fold별 validation data 개수: 30개 = (각 클래스별 10개) * (클래스 개수 3개)
 
 #### classifier
