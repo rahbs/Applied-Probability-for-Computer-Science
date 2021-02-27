@@ -83,8 +83,11 @@ fold별 validation data 개수: 30개 = (각 클래스별 10개) * (클래스 �
 #### 4. simple deep neural network
 
 fully connected neural network
+
 activation function : sofmax
+
 loss : categorical_crossentropy
+
 optimizer: adam
 
 ### Evaluation
